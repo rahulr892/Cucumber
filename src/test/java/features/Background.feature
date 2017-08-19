@@ -16,7 +16,7 @@ Feature: Background & Hooks Keyword
   Scenario Outline: Data driven using scenario outline
     Then I type "<SearchText>" to search text field
 
-    Examples:
+    Examples: Test Data
       | SearchText |
       | Youtube    |
       | Twitter    |
