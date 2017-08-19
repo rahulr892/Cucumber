@@ -9,6 +9,15 @@ Feature: Background & Hooks Keyword
     Then I validate the facebook page
 
   @DataDriven
-  Scenario: Data driven scenario
+  Scenario: Passing parameter to tests
     Then I type "RAHUL RANA" to search text field
+
+  @DataDriven
+  Scenario Outline: Data driven using scenario outline
+    Then I type "<SearchText>" to search text field
+
+    Examples:
+      | SearchText |
+      | Youtube    |
+      | Twitter    |
 
