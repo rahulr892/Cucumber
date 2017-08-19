@@ -12,7 +12,7 @@ Feature: Background & Hooks Keyword
   Scenario: Passing parameter to tests
     Then I type "RAHUL RANA" to search text field
 
-  @DataDriven
+  @ScenarioOutline
   Scenario Outline: Data driven using scenario outline
     Then I type "<SearchText>" to search text field
 

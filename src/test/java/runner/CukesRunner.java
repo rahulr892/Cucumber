@@ -14,7 +14,7 @@ import java.io.File;
 @CucumberOptions(features = {"src/test/java/features"},
         glue = {"stepdefinitions"},
         plugin = {"com.cucumber.listener.ExtentCucumberFormatter:", "pretty"},
-        tags = {"@DataDriven"}
+        tags = {"@ScenarioOutline, @Smoke"}
 )
 public class CukesRunner extends AbstractTestNGCucumberTests {
 

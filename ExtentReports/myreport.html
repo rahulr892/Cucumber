@@ -45,7 +45,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Aug 19, 2017 09:19:28 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Aug 19, 2017 09:37:30 PM</span>
 				</a>
 			</li>
 			<li>
@@ -84,6 +84,7 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>@DataDriven</a></li>
+					<li><a href='#'>@Smoke</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -131,7 +132,7 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -146,7 +147,7 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -161,7 +162,7 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>3</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>12</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -181,7 +182,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Background & Hooks Keyword</span>
-						<span class='test-time'>Aug 19, 2017 09:19:28 PM</span>
+						<span class='test-time'>Aug 19, 2017 09:37:30 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -189,10 +190,10 @@
 	<div class='category-list'>
 		<span class='category label white-text'>@DataDriven</span>
 	</div>
-	<span class='duration right label'>0h 0m 20s+428ms</span>
+	<span class='duration right label'>0h 0m 19s+703ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
-		<span class="desc-text">Data driven scenario</span>
+		<span class="desc-text">Passing parameter to tests</span>
 	</div>
 	<ul class='steps'>
 		<li test-id='3' class='node given pass' status='pass'>
@@ -217,6 +218,113 @@
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then I type "RAHUL RANA" to search text field</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenariooutline node' test-id='6' status='pass'>
+	<span class='duration right label'>0h 0m 24s+748ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Data driven using scenario outline</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='7' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@DataDriven</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Data driven using scenario outline</span>
+			
+				<ul class='steps'>
+					<li test-id='8' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given I open a browser</span>
+							<div class='pre'>Chrome Browser Opened</div>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='9' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When I navigate to facebook</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='10' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then I type "Youtube" to search text field</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='11' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@DataDriven</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Data driven using scenario outline</span>
+			
+				<ul class='steps'>
+					<li test-id='12' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given I open a browser</span>
+							<div class='pre'>Chrome Browser Opened</div>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='13' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When I navigate to facebook</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='14' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then I type "Twitter" to search text field</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='15'>
+					<div class='test-heading'>
+						<span class='test-name'>Google & FB Search</span>
+						<span class='test-time'>Aug 19, 2017 09:38:16 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='16' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@Smoke</span>
+	</div>
+	<span class='duration right label'>0h 0m 12s+606ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Validate google search results</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='17' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given I open a browser</span>
+				<div class='pre'>Chrome Browser Opened</div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='18' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When I navigate to google</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='19' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then I validate the search text field</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -278,6 +386,50 @@
 					<div class='category-heading'>
 						<span class='category-name'>@DataDriven</span>
 						<span class='category-status right'>
+							<span class='label pass'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 3</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 19, 2017 09:37:30 PM</td>
+										<td class='linked' test-id='2'>Background & Hooks Keyword.Passing parameter to tests</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 19, 2017 09:37:50 PM</td>
+										<td class='linked' test-id='7'>Background & Hooks Keyword.Data driven using scenario outline.Data driven using scenario outline</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 19, 2017 09:38:00 PM</td>
+										<td class='linked' test-id='11'>Background & Hooks Keyword.Data driven using scenario outline.Data driven using scenario outline</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Smoke</span>
+						<span class='category-status right'>
 							<span class='label pass'>1</span>
 						</span>
 					</div>
@@ -299,8 +451,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 19, 2017 09:19:28 PM</td>
-										<td class='linked' test-id='2'>Background & Hooks Keyword.Data driven scenario</td>
+										<td>Aug 19, 2017 09:38:16 PM</td>
+										<td class='linked' test-id='16'>Google & FB Search.Validate google search results</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -329,37 +481,37 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>4</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>12</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 19, 2017 09:19:28 PM</div>
+					<div class='panel-lead'>Aug 19, 2017 09:37:30 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 19, 2017 09:19:49 PM</div>
+			 		<div class='panel-lead'>Aug 19, 2017 09:38:29 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>21,130ms</div>
+					<div class='panel-lead'>58,904ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -375,6 +527,12 @@
 						</tr>
 						<tr>
 							<td>@DataDriven</td>
+							<td>3</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@Smoke</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -392,7 +550,7 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
+				passParent: 2,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
@@ -400,7 +558,7 @@
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 1,
+				passChild: 4,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
@@ -409,7 +567,7 @@
 				infoChild: 0,
 				exceptionsChild: 0,
 				
-				passGrandChild: 3,
+				passGrandChild: 12,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
