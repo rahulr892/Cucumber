@@ -4,13 +4,14 @@ Feature: Background & Hooks Keyword
     Given I open a browser
     When I navigate to facebook
 
-  @Background
   Scenario: Validate Background functionality
     Then I validate the facebook page
 
-  @DataDriven
+
+  @Parameters
   Scenario: Passing parameter to tests
     Then I type "RAHUL RANA" to search text field
+
 
   @ScenarioOutline
   Scenario Outline: Data driven using scenario outline
@@ -20,4 +21,8 @@ Feature: Background & Hooks Keyword
       | SearchText |
       | Youtube    |
       | Twitter    |
+
+
+    # ScenarioOutline used when tests need to be run on multiple sets of data
+    # DataTable used for tests with long list of inputs but not like ScenarioOutline
 

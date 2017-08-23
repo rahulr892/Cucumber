@@ -45,7 +45,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Aug 19, 2017 11:00:49 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Aug 20, 2017 09:08:47 AM</span>
 				</a>
 			</li>
 			<li>
@@ -83,7 +83,7 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@DataTable</a></li>
+					<li><a href='#'>@POJODataTable</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -161,7 +161,7 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>6</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -181,18 +181,18 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Google Title</span>
-						<span class='test-time'>Aug 19, 2017 11:00:49 PM</span>
+						<span class='test-time'>Aug 20, 2017 09:08:47 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='pass'>
 	<div class='category-list'>
-		<span class='category label white-text'>@DataTable</span>
+		<span class='category label white-text'>@POJODataTable</span>
 	</div>
-	<span class='duration right label'>0h 0m 23s+926ms</span>
+	<span class='duration right label'>0h 0m 22s+778ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
-		<span class="desc-text">Check title of website</span>
+		<span class="desc-text">Register on newtours POJO</span>
 	</div>
 	<ul class='steps'>
 		<li test-id='3' class='node given pass' status='pass'>
@@ -209,7 +209,7 @@
 			<b>When</b>
 			
 			<span class="bdd-step-name">When I navigate to website</span>
-				<div class='pre'><table><tr><td>website</td><td>http://www.google.com</td></tr></table></div>
+				<div class='pre'><table><tr><td>website</td><td>http://newtours.demoaut.com/</td></tr></table></div>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -217,17 +217,32 @@
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then I validate the website title as mentioned below</span>
-				<div class='pre'><table><tr><td>title</td><td>Google</td></tr></table></div>
+			<span class="bdd-step-name">Then I click on register link</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='6' class='node and pass' status='pass'>
+		<li test-id='6' class='node then pass' status='pass'>
 			
-			<b>And</b>
+			<b>Then</b>
 			
-			<span class="bdd-step-name">And I type text to search text field</span>
-				<div class='pre'><table><tr><td>text1</td><td>typo1</td></tr><tr><td>text3</td><td>typo3</td></tr></table></div>
+			<span class="bdd-step-name">Then I enter valid data using datatable and pojo</span>
+				<div class='pre'><table><tr><td>username</td><td>password</td><td>confirmPassword</td></tr><tr><td>rahul</td><td>test123</td><td>test123</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='7' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then I click on submit</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='8' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then I click signOff</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -287,7 +302,7 @@
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@DataTable</span>
+						<span class='category-name'>@POJODataTable</span>
 						<span class='category-status right'>
 							<span class='label pass'>1</span>
 						</span>
@@ -310,8 +325,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 19, 2017 11:00:49 PM</td>
-										<td class='linked' test-id='2'>Google Title.Check title of website</td>
+										<td>Aug 20, 2017 09:08:47 AM</td>
+										<td class='linked' test-id='2'>Google Title.Register on newtours POJO</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -352,25 +367,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>6</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 19, 2017 11:00:49 PM</div>
+					<div class='panel-lead'>Aug 20, 2017 09:08:47 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 19, 2017 11:01:13 PM</div>
+			 		<div class='panel-lead'>Aug 20, 2017 09:09:10 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>24,394ms</div>
+					<div class='panel-lead'>23,323ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -385,7 +400,7 @@
 							<th>Others</th>
 						</tr>
 						<tr>
-							<td>@DataTable</td>
+							<td>@POJODataTable</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -420,7 +435,7 @@
 				infoChild: 0,
 				exceptionsChild: 0,
 				
-				passGrandChild: 4,
+				passGrandChild: 6,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
